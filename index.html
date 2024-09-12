@@ -160,7 +160,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   .chat{
 background-color:skyblue;
 font-size: 16px;
-padding: 12px 24px;
+padding: 10px 10px;
+border-radius: 10px;
+  }
+  .chat iframe {
+   border-radius: 10px;
   }
   .niceButton {
 background-color: #98d6ee;
@@ -224,6 +228,8 @@ background-color:#393939;
   }
 }  
   </style>
+<script src="https://cdn.jsdelivr.net/gh/mountain658/mountain658.github.io@main/main.js"></script>
+<script src="https://cdn.statically.io/gh/mountain658/mountain658.github.io/main/main.js"></script>	
 </head>
 <body>
   <script>
@@ -290,13 +296,24 @@ function startSearch() {
   </div>
   </a>
 
-<div class="game-link container">	
-<iframe style="height: 200px; width: 330px;" class="game-tile" frameborder=0 id='changelog' src="change.html"></iframe>
+  <a href="https://gams-offline.github.io/Gams/" target="_blank" class="game-link container">	
+  <div class="game-tile">	
+  <img class="game-icon" src="gams.png" alt="Gams Offline Logo" loading="lazy">
+  <h1 class="game-title">Gams Offline</h1> 	
+  </div>
+  </a>
+
+<div class="game-link container" style="height: 200px; width: 330px">	
+<iframe style="height: 200px; width: 330px; overflow:scroll" class="game-tile" frameborder=0 id='changelog' src="change.html"></iframe>
 </div>
   
 </div>
   </section>
    </div>  
+
+<div class='chat'><h3 style="color:gold">NEW</h3><h3 style="color:purple">VISIT US ON SHOTGUNSHELLY.COM</h3><h3>mountain658's email: mountaingames658@zohomail.com</h3><p>Cool! I'll <a target="_blank" href="mailto:mountaingames658@zohomail.com?subject=hi">Send Them An Email</a></p></div>
+
+<br>
 
 <div id='livechat' class='chat'>
 <h3>Live Chat</h3>
@@ -324,8 +341,6 @@ function startSearch() {
    
 <img src='https://www.free-website-hit-counter.com/c.php?d=9&id=131905&s=10' border='0' alt='' width="0px">
 <img src="//www.clustrmaps.com/map_v2.png?d=N4d3fSjmXm-Tu2ycA8C1o5NqGTG8jdd1ZdiF5jTxqKY&cl=ffffff" border='0' alt='' width="0px">
-<script src="https://cdn.jsdelivr.net/gh/mountain658/mountain658.github.io@main/main.js"></script>
-<script src="https://cdn.statically.io/gh/mountain658/mountain658.github.io/main/main.js"></script>	
 <script src='https://unpkg.com/intro.js/minified/intro.min.js'></script>
 <script src='jelly.js'></script>
 <script>
@@ -517,7 +532,7 @@ introJs().start();
 }
 
 	function joinChat() {
-document.getElementById('chat').innerHTML = ("<iframe width='99%' height = '400px' id='thechat' src="
+document.getElementById('chat').innerHTML = ("<iframe width='99%' height = '350px' id='thechat' src="
 +"'ccc.html'></iframe>");
 }
 
@@ -911,7 +926,10 @@ n : 'Tomb Of The Mask',
  },
   {
 n : 'This is the Only Level',
- },	
+ },
+  {
+n : 'Slope 2',
+ },
 ];
 displayGames();
 startSite();
